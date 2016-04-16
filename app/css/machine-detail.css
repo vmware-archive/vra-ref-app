@@ -1,0 +1,117 @@
+/**
+ * Copyright © 2016 VMware, Inc. All Rights Reserved.
+ * Licensed under the Apache License, Version 2.0 (the “License”); you may not
+ * use this file except in compliance with the License. You may obtain a copy of
+ * the License at http://www.apache.org/licenses/LICENSE-2.0
+ * Some files may be comprised of various open source software components, each of which
+ * has its own license that is located in the source code of the respective component.
+ */
+
+#machineDetail .modal-header {
+    border-bottom-width: 0;
+}
+
+#machineDetail .nav-tabs {
+    padding-left: 15px;
+}
+
+#machineDetail .nav-tabs > li.action-tab {
+    display: none;
+}
+
+#machineDetail .nav-tabs > li.action-tab.showing {
+    display: block;
+}
+
+#machineDetail .modal-body .row {
+    margin-bottom: 15px;
+}
+
+#machineDetail .modal-body .row > div {
+    padding-top: 7px;
+}
+
+#machineDetail .modal-body .row > .col-md-4 {
+    text-align: right;
+}
+
+#machineDetail .modal-aside {
+    transition: transform 0.2s ease-in, opacity 0.2s ease-in;
+}
+
+#machineDetail .modal-aside.hiding {
+    opacity: 0;
+    transform: translateX(200px);
+}
+
+#machineDetail .modal-aside .modal-content {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 200px;
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#machineDetail .modal-aside ul.action-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#machineDetail .modal-aside li.action {
+    padding: 5px;
+    border-radius: 5px;
+    color: #337ab7;
+    cursor: pointer;
+}
+
+#machineDetail .modal-aside li.action:hover {
+    background: #eee;
+    color: #23527c;
+}
+
+#machineDetail .modal-aside li.action:hover .glyphicon-off {
+    color: #fb3d37;
+}
+
+#machineDetail .modal-aside li.action:hover .glyphicon-play-circle {
+    color: #53d86a;
+}
+
+#machineDetail .modal-aside li.form-action .form-action-icon {
+    margin: 0;
+    float: right;
+    line-height: 22px;
+    visibility: hidden;
+}
+
+#machineDetail .modal-aside li.form-action:hover .form-action-icon {
+    visibility: visible;
+}
+
+#machineDetail .modal-aside .glyphicon {
+    margin-right: 10px;
+}
+
+#machineDetail .tab-pane form input {
+    display: inline-block;
+    width: initial;
+}
+
+#machineDetail .tab-pane form .btn-edit,
+#machineDetail .tab-pane form.editing .btn-cancel,
+#machineDetail .tab-pane form.editing .btn-submit {
+    display: inline-block;
+}
+
+#machineDetail .tab-pane form .btn-cancel,
+#machineDetail .tab-pane form .btn-submit,
+#machineDetail .tab-pane form.editing .btn-edit {
+    display: none;
+}
+
+#machineDetail #machineLease form label {
+    width: 70px;
+}

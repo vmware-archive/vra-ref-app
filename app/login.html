@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="dcterms.rightsHolder" content="VMware, Inc.">
+    <meta name="dcterms.rights" content="Copyright © 2016 VMware, Inc. All Rights Reserved. Licensed under the Apache License, Version 2.0 (the “License”); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0. Some files may be comprised of various open source software components, each of which has its own license that is located in the source code of the respective component.">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Your Cloud Login</title>
+
+    <!--bootstrap styles-->
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+    <!--application styles-->
+    <link rel="stylesheet" type="text/css" href="css/MessageToast.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/loading-icon.css">
+
+    <!--jQuery-->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!--application configuration file-->
+    <script src="conf/conf.js"></script>
+
+    <!--vra api-->
+    <script src="js/vra.js"></script>
+    <script src="js/register-apis.js"></script>
+
+    <!--application global object-->
+    <script src="js/MessageToast.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/app.validatesToken.js"></script>
+    <script src="js/app.messageToast.js"></script>
+
+    <!--login scripts-->
+    <script src="js/login.js"></script>
+</head>
+<body>
+    <!--app header-->
+    <header class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h1>Your Cloud</h1>
+            </div>
+            <div class="user col-md-8">
+                <a target="_blank"href="help.html">Help</a></span>
+            </div>
+        </div>
+    </header>
+
+    <!--app body-->
+    <div id="main" class="container">
+
+        <!--login form-->
+        <div class="form-panel">
+            <form id="loginForm" class="form-horizontal">
+                <fieldset>
+                    <legend><span class="loading-icon glyphicon glyphicon-refresh"></span>Your Cloud Login</legend>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Tenant:</label>
+                        <div class="col-md-8">
+                            <input type="text" name="tenant" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">User name:</label>
+                        <div class="col-md-8">
+                            <input type="email" name="username" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Password:</label>
+                        <div class="col-md-8">
+                            <input type="password" name="password" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-offset-4 col-md-8">
+                            <button type="submit" class="btn btn-primary btn-login">Log in</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <!--app footer-->
+    <footer class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-4">
+                <span class="copyright">Copyright © 2016 VMware, Inc.</span>
+            </div>
+            <div class="col-md-8 col-sm-8 col-xs-8">
+                <span class="version">vRealize Automation Reference Application APP_VERSION | Connected to vRealize Automation version VRA_VERSION</span>
+            </div>
+        </div>
+    </footer>
+
+    <!--message toast-->
+    <div id="messageToast" class="message-toast hiding">
+        <div class="container">
+            <div class="alert">
+                <div class="status"></div>
+                <div class="message"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--application scripts-->
+    <script src="js/footer.js"></script>
+</body>
+</html>

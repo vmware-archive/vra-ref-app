@@ -1,0 +1,51 @@
+.snapshot-tree .snapshot {
+    margin-left: 15px;
+}
+
+.snapshot-tree .snapshot-item {
+    position: relative;
+    border-radius: 5px;
+    padding: 5px;
+    color: #337ab7;
+}
+
+.snapshot-tree .snapshot-item:hover {
+    background: #eee;
+    color: #23527c;
+}
+
+.snapshot-tree .snapshot-item > a {
+    text-decoration: none;
+}
+
+.snapshot-tree .snapshot-item > a > .collapse-icon {
+    position: absolute;
+    top: calc(50% - 7px);
+    left: -15px;
+}
+
+.snapshot-tree .snapshot-item > a > .collapse-icon::before {
+    content: "\e250";
+}
+
+.snapshot-tree .snapshot-item.collapse-in > a > .collapse-icon::before {
+    content: "\e252";
+}
+
+.snapshot-tree .snapshot-item > button {
+    visibility: hidden;
+    margin-left: 10px;
+}
+
+.snapshot-tree .snapshot-item:hover > button {
+    visibility: visible;
+}
+
+.create-snapshot {
+    display: none;
+}
+
+.create-snapshot.showing {
+    display: block;
+
+}

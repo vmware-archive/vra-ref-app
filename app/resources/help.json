@@ -1,0 +1,25 @@
+{
+    "topics": [
+        {
+            "title": "Overview",
+            "description": "This is a sample project that demonstrates how to create a simple self-service portal for vRealize Automation using only RESTful APIs. You are encouraged to view the source code to see how the use cases are accomplished and to adapt this application for your own needs."
+        },
+        {
+            "title": "vRealize Automation Compatibility",
+            "description": "This demo application supports vRealize Automation 7.0.1 or later."
+        },
+        {
+            "title": "Configuration",
+            "description": "To connect this application to your vRealize Automation instance, edit the value of vraDomain in the conf/conf.js file and specify the host name of your vRealize Automation portal. For additional information about deploying the reference application, refer to the README."
+        },
+        {
+            "title": "APIs Used in This Application",
+            "description": "This application primarily uses the vRealize Automation Identity and catalog service APIs. All the API calls used in this application are listed in the js/register-apis.js file. For complete vRealize Automation reference documentation, see https://YOUR_VRA_DOMAIN/component-registry/services/docs."
+        },
+        {
+            "title": "Browser Compatibility",
+            "description": "This demo application supports Internet Explorer 10 or later as well as all recent versions of Chrome, Firefox, and Safari."
+        }
+    ],
+    "license": "Copyright © 2016 VMware, Inc. All Rights Reserved. Licensed under the Apache License, Version 2.0 (the “License”); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Some files may be comprised of various open source software components, each of which has its own license that is located in the source code of the respective component."
+}
