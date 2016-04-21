@@ -17,7 +17,7 @@ See:
 1. Download and install node.js and npm from the [Node.js website](https://nodejs.org).
 2. From a terminal window or command prompt, install http-server globally (you might need to use `$ sudo` if you are using Linux or OSX)
 `$ npm install http-server -g`
-3. Change to the vRealize Automation Reference Application directory.
+3. Change to the vRealize Automation Reference Application directory (for example: *{download-location}*/vra-ref-app-*{version}*/app).
 4. Issue the following command:
 `$ http-server`
 
